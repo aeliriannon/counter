@@ -1,0 +1,316 @@
+/*===== BASE =====*/
+
+.page {
+    padding-top: 15px;
+    padding-bottom: 87px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+}
+
+.btn-sale {
+    display: flex;
+    align-items: center;
+    background: #FFCC00;
+    color: #000;
+    border: 0;
+    padding: 0 14px;
+    cursor: pointer;
+    font: 600 14px/16px 'Roboto', sans-serif;
+    border: 2px solid #FFCC00;
+    border-radius: 0 8px 8px 0;
+}
+    .btn-sale:hover {
+        background: #252525;
+        color: #FFCC00;
+    }
+
+/*===== HEADER =====*/
+
+.header__basic {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 29px;
+}
+
+.header_navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    height: 34px;
+    background: #252525;
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.header__info {
+    width: 100%;
+}
+
+.header__action {        
+    align-items: center;
+    border-bottom: 1px solid #D7D7D7;
+    display: flex;
+    font: 400 12px/14px 'Roboto', sans-serif;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.header__organization {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;        
+    padding-top: 22px;
+}
+
+/*===== LOGO =====*/
+
+.logo {
+    background: url('../assets/img/logo.png') no-repeat 0 0;
+    background-size: contain;
+    display: block;    
+    height: 134px;
+    width: 210px;
+}
+
+/*===== NAVIGATION =====*/
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 22px;
+}
+
+    .navigation__item a {
+        color: #252525;
+        text-decoration: none;
+    }
+
+    .navigation__item a:hover {
+        text-decoration: underline;
+    }
+
+/*===== SIGIN =====*/
+
+.signin a {
+    display: inline-block;
+    color: #252525;
+    text-decoration: none;
+}
+.signin a + a:before {
+    content: '';
+    border-left: 1px solid #000;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    margin: 0 14px;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+/*===== BANNER =====*/
+
+.banner {
+    background: #E2E2E2;
+    height: 70px;
+    width: 253px;
+
+}
+
+/*===== OPTIONS =====*/
+
+.option_item {
+    display: flex;
+    align-items: center;     
+}
+.option_item + .option_item {
+    margin-top: 8px;
+}
+    .option_item a {
+        color: #252525;
+        font: 400 12px/14px 'Roboto', sans-serif;
+    }
+    .option_item a:hover {
+        text-decoration: none;
+    }
+    .option_item._card a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+.option_item:before {
+    content: '';
+    background: url('../assets/img/card.svg') no-repeat 50% 50%;
+    width: 19px;
+    height: 18px;
+    margin-right: 11px;
+}
+
+.option_item._elect:before {
+    background-image: url('../assets/img/star.svg');
+}
+
+.option_item._compare:before {
+    background-image: url('../assets/img/balance.svg');
+}
+
+/*===== GOODS =====*/
+
+.goods {
+    display: flex;
+}
+
+    .goods__item + .goods__item {
+        margin-left: 15px;
+    }
+
+        .goods__list a {
+            display: inline-block;
+        }
+
+/*===== WORK-DATA =====*/
+
+.work-data {
+    color: #252525;
+}
+
+    .work-data__time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font: 400 12px/14px 'Roboto', sans-serif;        
+    }
+
+        .work-data__time strong {
+            font-weight: 700;
+        }
+
+    .work-data__phone {
+        font: 700 25px/29px 'Roboto', sans-serif;
+        margin-top: 15px;
+    }
+        .work-data__phone a {
+            color: #252525;
+            text-decoration: none;
+        }
+
+    .work-data__city {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 14px;
+        border-top: 1px solid #D7D7D7;
+        padding-top: 4px;
+    }
+
+        .work-data__city input {
+            border: 0;
+            padding: 0;
+            width: 100px;
+        }
+
+        .work-data__city input:focus-visible  {
+            outline: 0;
+        }
+
+        .work-data__change {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .work-data__change:hover span {
+            text-decoration: none;
+        }
+            .work-data__change:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 0px;
+                height: 0px;
+                border-left: 6px solid #252525;
+                border-top: 3px solid transparent; 
+                border-bottom: 3px solid transparent;
+                border-right: 0;
+                margin-right: 4px;
+            }
+            .work-data__change span {
+                display: inline-block;
+                vertical-align: middle;
+                text-decoration: underline;
+            }
+
+/*===== SEARCH =====*/
+
+.search:hover input,
+.search input:focus,
+.search input:focus-visible {
+    transform: scaleX(1);
+}
+
+    .search button {
+        position: relative;        
+        display: block;
+        width: 39px;
+        height: 34px;
+        background: url('../assets/img/search.svg') no-repeat 50% 50% #FFCC00;
+        z-index: 20;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .search input {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 34px;
+        z-index: 10;
+        padding-left: 49px;
+        border: 0;
+        box-shadow: none;
+        transform: scaleX(0);
+        transition: 300ms;
+        background: #252525;
+        color: #FFCC00;
+        font: 400 12px/14px 'Roboto', sans-serif;
+    }
+    .search input:focus,
+    .search input:focus-visible {
+        outline: 0;
+    }
+
+    .search input::placeholder {
+        color: #FFCC00;
+        font: 400 12px/14px 'Roboto', sans-serif;
+    }
+
+/*===== ADD-NAVIGATION =====*/
+
+.add-navigation ul {
+    display: flex;    
+}
+
+    .add-navigation__item a {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 34px;
+        background: #252525;
+        padding: 0 18px;
+        color: #fff;
+        font: 600 14px/16px 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+
+    .add-navigation__item._active a,
+    .add-navigation__item:hover a {
+        background: #FFCC00;
+        color: #000;
+    }
